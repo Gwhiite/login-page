@@ -4,13 +4,31 @@
   font-size: 16px;
   color: $text-color;
   text-align: start;
-  .input-content {
-    border-radius: 8px;
-    background-color: $gray-secondary-bg;
-    border: none;
+  label {
+    margin-bottom: 10px;
+  }
 
-    font-weight: 400;
-    padding: 12px 0 12px 20px;
+  .input-content {
     width: 100%;
+    border-radius: 8px;
+    display: flex;
+    .icon {
+      padding: 12px;
+      background-color: $primary-color;
+      border-radius: 0 8px 8px 0;
+
+      img {
+        height: 20px;
+      }
+    }
+
+    input {
+      border-radius: 8px 0 0 8px;
+      background-color: $gray-secondary-bg;
+      border: none;
+      font-weight: 400;
+      padding: 12px 0 12px 20px;
+      width: 100%;
+    }
   }
 }
