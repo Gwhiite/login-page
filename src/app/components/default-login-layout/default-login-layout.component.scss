@@ -70,6 +70,10 @@ main {
         cursor: pointer;
         padding: 12px 24px;
 
+        &:disabled {
+          opacity: 0.8;
+        }
+
         &.btn-primary {
           background-color: $primary-color;
           color: white;
